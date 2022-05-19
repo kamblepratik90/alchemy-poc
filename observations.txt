@@ -1,0 +1,64 @@
+start.. monitor events
+Thu Mar 17 2022 18:11:27
+To
+Thu Mar 17 2022 19:12:25
+——> 213 @ per 10 sec interval (in 1hr span) ------> expected was 360 but due to time taken for tx 213 is the count.
+
+
+=--- 
+concurrent process = 2
+start -> 
+Thu Mar 17 2022 19:24:18
+to
+Thu Mar 17 2022 20:24:46
+--> 227 @ per 10 sec interval (in 1hr span)
+
+=--- 
+concurrent process = 2 -> 2 sec
+start -> 
+Fri Mar 18 2022 02:25:27
+to
+Fri Mar 18 2022 02:37:39
+----> 263 @ per 2 sec interval (12 min)
+
+
+=--- 
+concurrent process = 3 -> 1 sec
+start -> 
+Fri Mar 18 2022 02:43:01
+to
+Fri Mar 18 2022 02:54:13
+---> 339 @ per 1 sec (11 min)
+
+
+-> same as above
+Fri Mar 18 2022 03:14:36
+to
+Fri Mar 18 2022 12:17:00
+===> 3295 @ per 1 sec (~9hr)
+
+https://medium.com/coinmonks/monitoring-an-ethereum-address-with-web3-js-970c0a3cf96d
+https://www.coinclarified.com/p/3-ways-to-subscribe-to-events-with-web3-js/ 
+
+https://docs.polygonscan.com/
+https://docs.etherscan.io/
+
+can we monitor block creation (not ideal way but if we could manage this at best speed)---> demo
+polyscan -> 5 sec per new block ( very fast... ) (many times lessser tx count per block).... 
+
+    ----> started/GENESIS on May-30-2020  ... currently 2.6cr --in ~2y 
+etherscan 
+    ----> around 30 sec (2 blocks per minute) -----> started/GENESIS on Jul-30-2015 .... currently 1.4Cr - in 7y 
+
+--->>>****---> really amazed with speed the nodes are running at.. lightning infra 
+
+
+
+//////// event monito example
+https://docs.ethers.io/v5/api/contract/example/#erc20-events
+
+
+currentIndex old :  12
+Mon Mar 21 2022 19:45:45
+currentIndex old :  486
+Tue Mar 22 2022 03:04:05

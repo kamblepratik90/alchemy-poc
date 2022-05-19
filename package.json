@@ -1,0 +1,29 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.6.1",
+    "hardhat": "^2.9.1"
+  },
+  "scripts": {
+    "dev": "nodemon scripts/src/app.js"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.2.5",
+    "@openzeppelin/upgrades-core": "^1.14.2",
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ethereum-bloom-filters": "^1.0.10",
+    "express": "^4.17.3",
+    "global-agent": "^3.0.0",
+    "http-errors": "^2.0.0",
+    "is-online": "^9.0.1",
+    "moralis": "^1.5.5",
+    "node-cron": "^3.0.0",
+    "web3": "^1.7.3"
+  }
+}
